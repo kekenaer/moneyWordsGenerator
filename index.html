@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/moneyWordsGenerator.js" ></script>
+	</head>
+	<body>
+		<div>
+			转换前：<span class="before"></span>,转换后：<span class="after"></span>
+		</div>
+	</body>
+</html>
+<script>
+	var number = '50.25';
+	var convertor = new MoneyWordsGenerator();
+	var result = convertor.moneyToBigChar(number);
+	$('.before').text(number);
+	$('.after').text(result);
+</script>
